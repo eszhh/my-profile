@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <!-- Elles Society: overlapping circles, people coming together -->
+  <rect width="600" height="420" fill="#F1D9D6"/>
+  <g style="mix-blend-mode:multiply">
+    <circle cx="240" cy="180" r="100" fill="#C8102E" opacity="0.85"/>
+    <circle cx="360" cy="180" r="100" fill="#2E7D6B" opacity="0.8"/>
+    <circle cx="300" cy="270" r="100" fill="#E8A0A8" opacity="0.9"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600">
+  <!-- Illustrated portrait of Elisa -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#2E7D6B"/>
+      <stop offset="1" stop-color="#0F3D3E"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1D1A"/>
+      <stop offset="1" stop-color="#1A1211"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="480" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="110" r="150" fill="#ffffff" opacity="0.05"/>
+
+  <!-- hair, back layer -->
+  <path d="M150 250 C140 150 190 105 245 105 C305 105 345 150 338 250 C334 320 345 380 360 430 L128 430 C142 380 152 320 150 250 Z" fill="url(#hair)"/>
+
+  <!-- blazer -->
+  <path d="M80 600 C84 500 140 450 240 448 C340 450 396 500 400 600 Z" fill="#14292A"/>
+  <!-- top underneath -->
+  <path d="M200 452 L240 530 L280 452 C266 448 214 448 200 452 Z" fill="#F4F1EC"/>
+  <!-- lapels -->
+  <path d="M200 452 L240 530 L214 600 L170 600 L186 470 Z" fill="#0F2223"/>
+  <path d="M280 452 L240 530 L266 600 L310 600 L294 470 Z" fill="#0F2223"/>
+
+  <!-- neck -->
+  <path d="M218 380 L262 380 L264 448 C252 458 228 458 216 448 Z" fill="#E9BFA0"/>
+  <path d="M218 400 C232 414 250 414 262 404 L262 380 L218 380 Z" fill="#D9A888"/>
+
+  <!-- face -->
+  <path d="M182 270 C182 205 210 170 241 170 C274 170 300 205 300 270 C300 335 272 392 241 392 C210 392 182 335 182 270 Z" fill="#F2CDB0"/>
+
+  <!-- ears and earrings -->
+  <ellipse cx="182" cy="285" rx="10" ry="18" fill="#E9BFA0"/>
+  <ellipse cx="300" cy="285" rx="10" ry="18" fill="#E9BFA0"/>
+  <circle cx="182" cy="312" r="5" fill="#E8C468"/>
+  <circle cx="300" cy="312" r="5" fill="#E8C468"/>
+
+  <!-- hair, front: side part with a soft sweep -->
+  <path d="M176 270 C168 190 205 140 252 140 C300 142 322 185 310 250 C296 210 272 186 240 176 C222 200 200 228 176 270 Z" fill="url(#hair)"/>
+  <path d="M176 270 C174 320 168 370 150 420 C140 360 146 300 176 270 Z" fill="url(#hair)"/>
+  <path d="M306 250 C314 320 320 370 336 420 C350 350 340 290 306 250 Z" fill="url(#hair)"/>
+  <path d="M240 176 C262 196 288 214 306 250 C300 210 284 186 252 172 Z" fill="#3A2A25" opacity="0.6"/>
+
+  <!-- eyebrows -->
+  <path d="M205 255 Q218 247 231 253" stroke="#2A1D1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M252 253 Q265 247 278 255" stroke="#2A1D1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <path d="M207 276 Q218 268 229 276" stroke="#2A1D1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M254 276 Q265 268 276 276" stroke="#2A1D1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- nose -->
+  <path d="M240 290 Q236 312 243 316" stroke="#D29A7E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- blush -->
+  <ellipse cx="208" cy="314" rx="14" ry="8" fill="#E89A8C" opacity="0.35"/>
+  <ellipse cx="274" cy="314" rx="14" ry="8" fill="#E89A8C" opacity="0.35"/>
+
+  <!-- smile -->
+  <path d="M222 338 Q241 354 260 338 Q241 346 222 338 Z" fill="#B5455C"/>
+</svg>
