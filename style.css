@@ -1,0 +1,373 @@
+/* ==========================================================
+   Colors
+   Jade ink   #0F3D3E  (dark sections, headlines)
+   Jade       #2E7D6B  (buttons, links)
+   Porcelain  #EEF2F0  (tinted background)
+   Mist       #C9D6D1  (lines)
+   Lacquer    #C8102E  (the red seal, used once)
+   Text       #1B2A2A
+   ========================================================== */
+
+/* ========== 1. Default design ========== */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  background: #FFFFFF;
+  color: #1B2A2A;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+h1, h2, h3 {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  color: #0F3D3E;
+  margin: 0px;
+}
+a {
+  color: #2E7D6B;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #0F3D3E;
+}
+a:focus-visible {
+  outline: 2px solid #2E7D6B;
+  outline-offset: 3px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== 2. Container ========== */
+.container {
+  width: 1100px;
+  margin: 0px auto;
+  padding: 0px 32px;
+}
+
+/* ========== 3. Navbar ========== */
+.navbar {
+  position: sticky;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #E3EAE7;
+  z-index: 10;
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+.navbar-brand {
+  font-family: "Gloock", serif;
+  font-size: 24px;
+  color: #0F3D3E;
+}
+.navbar-links a {
+  margin-left: 32px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1B2A2A;
+}
+.navbar-links a:hover {
+  color: #2E7D6B;
+}
+
+/* ========== 4. Hero ========== */
+.hero {
+  padding: 88px 0px 104px 0px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.hero-place {
+  margin: 0px 0px 20px 0px;
+  font-weight: 500;
+  color: #2E7D6B;
+}
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.08;
+  letter-spacing: -0.5px;
+}
+.hero-lead {
+  margin: 28px 0px 36px 0px;
+  max-width: 34em;
+  font-size: 19px;
+  color: #3D4D4C;
+}
+.hero-photo {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  justify-self: end;
+}
+.img-arch {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 999px 999px 8px 8px;
+}
+.seal {
+  position: absolute;
+  left: -28px;
+  bottom: 48px;
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  background: #C8102E;
+  color: #FFFFFF;
+  font-family: "Gloock", serif;
+  font-size: 38px;
+  line-height: 72px;
+  text-align: center;
+  transform: rotate(-6deg);
+  box-shadow: 0px 12px 30px rgba(200, 16, 46, 0.3);
+}
+
+/* One page-load moment: the hero rises in */
+.hero-text, .hero-photo {
+  animation: rise 0.9s ease both;
+}
+.hero-photo {
+  animation-delay: 0.15s;
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0px); }
+}
+
+/* ========== 5. Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn-jade {
+  background: #2E7D6B;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+.btn-jade:hover {
+  background: #0F3D3E;
+  color: #FFFFFF;
+}
+.btn-outline {
+  border: 1.5px solid #C9D6D1;
+  color: #0F3D3E;
+}
+.btn-outline:hover {
+  border-color: #0F3D3E;
+}
+.btn-light {
+  background: #EEF2F0;
+  color: #0F3D3E;
+}
+.btn-light:hover {
+  background: #FFFFFF;
+  color: #0F3D3E;
+}
+
+/* ========== 6. Sections ========== */
+.section {
+  padding: 104px 0px;
+}
+.section-tinted {
+  background: #EEF2F0;
+}
+.section-title {
+  font-size: 40px;
+  margin-bottom: 48px;
+}
+
+/* ========== 7. Ventures ========== */
+.venture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 48px 0px;
+  border-top: 1px solid #E3EAE7;
+}
+.venture-image {
+  width: 100%;
+  border-radius: 8px;
+}
+.venture-role {
+  margin: 0px 0px 8px 0px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2E7D6B;
+}
+.venture h3 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+.venture p {
+  max-width: 30em;
+}
+.link-underline {
+  font-weight: 700;
+  border-bottom: 1.5px solid #C9D6D1;
+  padding-bottom: 2px;
+}
+.link-underline:hover {
+  border-color: #0F3D3E;
+}
+
+/* ========== 8. About ========== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+}
+.about-lead {
+  font-family: "Gloock", serif;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #0F3D3E;
+  margin-top: 0px;
+}
+.facts {
+  margin: 0px;
+  padding-top: 88px;
+}
+.fact {
+  padding: 20px 0px;
+  border-top: 1px solid #C9D6D1;
+}
+.fact dt {
+  font-weight: 700;
+  color: #0F3D3E;
+}
+.fact dd {
+  margin: 4px 0px 0px 0px;
+  color: #3D4D4C;
+}
+
+/* ========== 9. Contact ========== */
+.contact {
+  background: #0F3D3E;
+  color: #C9D6D1;
+  padding: 112px 0px;
+  text-align: center;
+}
+.contact h2 {
+  color: #FFFFFF;
+  font-size: 52px;
+  line-height: 1.1;
+}
+.contact p {
+  margin: 20px 0px 36px 0px;
+  font-size: 19px;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 40px 0px 0px 0px;
+}
+.list-inline > li {
+  display: inline;
+  padding: 0px 14px;
+}
+.contact .list-inline a {
+  color: #C9D6D1;
+  font-weight: 500;
+}
+.contact .list-inline a:hover {
+  color: #FFFFFF;
+}
+
+/* ========== 10. Footer ========== */
+.footer {
+  background: #0B3132;
+  color: #7FA39A;
+  font-size: 14px;
+  text-align: center;
+  padding: 24px 0px;
+}
+.footer p {
+  margin: 0px;
+}
+
+/* ========== 11. Responsive design ========== */
+/* From the least specific to the most specific */
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  .hero-grid, .venture, .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero {
+    padding: 56px 0px 72px 0px;
+  }
+  .hero h1 {
+    font-size: 44px;
+  }
+  .hero-photo {
+    max-width: 280px;
+    justify-self: start;
+  }
+  .facts {
+    padding-top: 0px;
+  }
+  .section {
+    padding: 72px 0px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .navbar-links a {
+    margin-left: 18px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .btn-jade {
+    margin-bottom: 12px;
+  }
+  .seal {
+    left: -10px;
+    width: 64px;
+    height: 64px;
+    font-size: 34px;
+    line-height: 64px;
+  }
+  .section-title, .contact h2 {
+    font-size: 34px;
+  }
+  .venture h3 {
+    font-size: 28px;
+  }
+}
+
+/* Respect people who turn off animations */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-text, .hero-photo {
+    animation: none;
+  }
+}
